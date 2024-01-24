@@ -28,5 +28,14 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+void swap_ints(int *a, int *b);
+void hoare_sort(int *array, size_t size, int left, int right);
+void quick_sort_hoare(int *array, size_t size);
+int hoare_partition(int *array, size_t size, int left, int right);
+void compare_swap_down(int *array_init, int *array, size_t size_init, size_t size, int *flag);
+void compare_swap_up(int *array_init, int *array, size_t size_init, size_t size, int *flag);
+void bitonic_deep_down(int *array_init, int *array, size_t size_init, size_t size, int *flag);
+void bitonic_deep_up(int *array_init, int *array, size_t size_init, size_t size, int *flag);
+void bitonic_sort(int *array, size_t size);
 /* void print_list_rev(const listint_t *list); */
 #endif
